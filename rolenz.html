@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind Vanilla</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+    <!-- Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+<!-- ✅ Floating Nav Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-sm text-m bg-black/70">
+    <div class="font-grotesk flex justify-center px-5 py-5 max-w-7xl mx-auto">
+        <ul class="flex items-center space-x-16 pt-4 text-white font-light tracking-widest">
+            <li><a href="#" class="hover:text-blue-300">HOME</a></li>
+            <li><a href="#" class="hover:text-blue-300">PROJECTS</a></li>
+            <li><a href="#" class="hover:text-blue-300">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ✅ Hero Section -->
+<section id="hero" class="font-grotesk pt-20 pb-20 px-1 h-svh opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+    <div class="max-w-1xl mx-auto flex flex-col md:flex-row items-center">
+        <!-- Left: Text -->
+        <div class="flex-1 text-center md:text-left space-y-3">
+            <div class="ml-40">
+                <h1 class="text-8xl tracking-widest">R E N Z </h1>
+                <p class="text-3xl uppercase text-gray-300">UI/UX Designer</p>
+                <p class="text-3xl uppercase text-gray-300">Frontend Developer</p>
+                <!-- Social Icons -->
+                <div class="flex justify-center md:justify-start space-x-6 pt-4 text-2xl text-gray-400">
+                    <a href="#" class="hover:scale-150 transition-transform duration-300 ease-in-out"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:scale-150 transition-transform duration-300 ease-in-out"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="hover:scale-150 transition-transform duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:scale-150 transition-transform duration-300 ease-in-out"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="flex-1 flex justify-center md:justify-center items-center w-full mr-40">
+            <img src="pngngpng 1.png" alt="Renz" class="h-[650px] rounded-md shadow-lg object-cover">
+        </div>
+    </div>
+</section>
+
+<!-- ✅ Tech Stack Grid -->
+<section id="tech-stack" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-4xl text-center mb-8">TECHNOLOGY STACK</h2>
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-6">
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">HTML5</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">CSS3</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">JavaScript</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Bootstrap</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Typescript</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">React</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Tailwind CSS</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Git</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Angular</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Python</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Figma</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Photoshop</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">MySQL</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <img src="gpt.png" alt="usin" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">ChatGPT</p>
+            </div>
+            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <p class="text-sm">Node.js</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ✅ Recent Projects Section -->
+<section id="projects" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-4xl text-center mb-12">RECENT PROJECTS</h2>
+        <div class="relative overflow-hidden">
+            <!-- Carousel slides -->
+            <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                <div class="min-w-full px-4">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="techtalk.jpg" alt="Project 1" class="w-full h-96 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">AAC TechTalk</h3>
+                            <p class="text-gray-300">Brief description of the project and technologies used.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-full px-4">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="risma.jpg" alt="Project 2" class="w-full h-96 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">MARIS</h3>
+                            <p class="text-gray-300">Brief description of the project and technologies used.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-full px-4">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="tocrypt.jpg" alt="Project 3" class="w-full h-96 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Smart Cryptocast</h3>
+                            <p class="text-gray-300">Brief description of the project and technologies used.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full" onclick="moveCarousel(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full" onclick="moveCarousel(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Dots indicators -->
+            <div class="flex justify-center mt-6 space-x-2">
+                <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(0)"></button>
+                <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(1)"></button>
+                <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(2)"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Intersection Observer to trigger animations on scroll
+    const sections = document.querySelectorAll('section');
+    const observerOptions = {
+        threshold: 0.3, // Trigger when 30% of the section is visible
+    };
+      let currentIndex = 0;
+        const carousel = document.getElementById('carousel');
+        const totalSlides = carousel.children.length;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                entry.target.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+
+
+    function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function moveCarousel(direction) {
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+</script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          grotesk: ['"Space Grotesk"', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
