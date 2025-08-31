@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R E N Z</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for social icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black text-white font-sans">
-
-<!-- ✅ Floating Nav Bar -->
+// Navbar Code
 <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/80 hidden md:block">
     <div class="font-grotesk flex justify-center items-center px-6 py-4 max-w-7xl mx-auto relative">
-        <!-- Navigation Links -->
         <ul id="nav-menu" class="flex items-center space-x-8 text-white font-light tracking-widest">
             <li class="py-6 md:py-0 text-center hover:bg-gray-800/50 md:hover:bg-transparent w-full md:w-auto">
                 <a href="#hero" class="block px-6 md:px-4 hover:text-blue-300 transition-colors text-3xl md:text-base">HOME</a>
@@ -28,290 +25,253 @@
             </li>
         </ul>
     </div>
-    <script>
-    function toggleMenu() {
-        const menu = document.getElementById('nav-menu');
-        menu.classList.toggle('hidden');
-    }
-
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('#nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth < 768) {
-                document.getElementById('nav-menu').classList.add('hidden');
-            }
-        });
-    });
-</script>
 </nav>
+<main class="pt-20">
+    <section id="hero" class="font-grotesk min-h-screen flex items-center opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left space-y-6">
+                <h1 class="text-2xl sm:text-6xl md:text-8xl font-semibold tracking-widest leading-tight whitespace-nowrap">R E N Z</h1>
 
-<!-- ✅ Hero Section -->
-<section id="hero" class="font-grotesk min-h-screen flex items-center pt-20 opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        <!-- Left: Text -->
-       <div class="flex-1 text-center md:text-left space-y-6">
-            <div class="space-y-4">
-                <h1 class="text-2xl sm:text-6xl md:text-8xl font-semibold tracking-widest leading-tight whitespace-nowrap">
-                    R E N Z
-                </h1>
                 <div class="space-y-2">
-                    <p class="text-xl sm:text-2xl md:text-3xl uppercase text-gray-300 font-light">UI/UX Designer</p>
-                    <p class="text-xl sm:text-2xl md:text-3xl uppercase text-gray-300 font-light">Frontend Developer</p>
+                    <p id="role-1" class="text-xl sm:text-2xl md:text-3xl uppercase text-gray-300 font-light"><span class="type-target"></span><span class="type-cursor" aria-hidden="true"></span></p>             
                 </div>
-                <!-- Social Icons -->
+
                 <div class="flex justify-center md:justify-start space-x-8 pt-6 text-xl sm:text-2xl text-gray-400">
-                    <a href="#" class="hover:text-white hover:scale-125 transition-all duration-300">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="hover:text-white hover:scale-125 transition-all duration-300">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="#" class="hover:text-white hover:scale-125 transition-all duration-300">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="hover:text-white hover:scale-125 transition-all duration-300">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                    <a href="https://github.com/Renz-Bcd" target="_blank" class="hover:text-white hover:scale-125 transition-all duration-300"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/LawrenceXeed" target="_blank" class="hover:text-white hover:scale-125 transition-all duration-300"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/if.else.renz/" target="_blank" class="hover:text-white hover:scale-125 transition-all duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lawrence-paul-bacud-a6829a342/" target="_blank" class="hover:text-white hover:scale-125 transition-all duration-300"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="flex-1 w-full max-w-4xl hidden lg:block">
+                <div class="relative flex items-center justify-center h-[95vh]">
+                    <img src="pngngpng 1.png" alt="Renz" class="w-auto h-full object-contain max-w-none ml-40">
                 </div>
             </div>
         </div>
+    </section>
+    <section id="tech-stack" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <h2 class="text-4xl text-center mb-8">TECH STACK</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">HTML5</p>
+                </div>
 
-        <!-- Right: Image -->
-        <div class="flex-1 w-full max-w-4xl hidden lg:block">
-            <div class="relative flex items-center justify-center h-[95vh]">
-                <img 
-                    src="pngngpng 1.png" 
-                    alt="Renz" 
-                    class="w-auto h-full object-contain max-w-none ml-40"
-                >
-            </div>
-        </div>
-    </div>
-</section>
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">CSS3</p>
+                </div>
 
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">JavaScript</p>
+                </div>
 
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">Bootstrap</p>
+                </div>
 
-<!-- ✅ Tech Stack Grid -->
-<section id="tech-stack" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
-    <div class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-4xl text-center mb-8">TECH STACK</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">HTML5</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">CSS3</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">JavaScript</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">Bootstrap</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">Typescript</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">React</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">Tailwind CSS</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                <p class="text-sm">Git</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">Typescript</p>
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">React</p>
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">Tailwind CSS</p>
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                    <p class="text-sm">Git</p>
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Angular</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Python</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Figma</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
-                     <p class="text-sm">Photoshop</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <p class="text-sm">Photoshop</p>
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">MySQL</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="gpt.png" alt="usin" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                    <img src="gpt.png" alt="ChatGPT" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">ChatGPT</p>
-            </div>
-            <div class="bg-black p-6 rounded-lg shadow-lg text-center">
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Node.js</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    
+    <section id="projects" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <h2 class="text-4xl text-center mb-12">RECENT PROJECTS</h2>
 
-<!-- ✅ Recent Projects Section -->
-<section id="projects" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
-    <div class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-4xl text-center mb-12">RECENT PROJECTS</h2>
-        <div class="relative overflow-hidden">
-            <!-- Carousel slides -->
-            <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
-                <div class="min-w-full px-4">
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform"
-                         role="button" tabindex="0"
-                         data-title="AAC TechTalk"
-                         data-description="AAC Techtalk is a web interactive learning platform for children."
-                         data-image="techtalk.jpg">
-                        <img src="techtalk.jpg" alt="AAC TechTalk" class="w-full h-96 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">AAC TechTalk</h3>
-                            <p class="text-gray-300">AAC Techtalk is a web interactive learning platform for children.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="min-w-full px-4">
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform"
-                         role="button" tabindex="0"
-                         data-title="MARIS"
-                         data-description="MARIS is an AI enhanced test creation: Improving teacher productivity and question quality."
-                         data-image="risma.jpg">
-                        <img src="risma.jpg" alt="MARIS" class="w-full h-96 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">MARIS</h3>
-                            <p class="text-gray-300">MARIS is an AI enhanced test creation: Improving teacher productivity and question quality.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="min-w-full px-4">
-                    <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform"
-                         role="button" tabindex="0"
-                         data-title="Smart Cryptocast"
-                         data-description="Smart Cryptocast is a platform for predicting crypto price for the next 30 days."
-                         data-image="tocrypt.jpg">
-                        <img src="tocrypt.jpg" alt="Smart Cryptocast" class="w-full h-96 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Smart Cryptocast</h3>
-                            <p class="text-gray-300">Smart Cryptocast is a platform for predicting crypto price for the next 30 days.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="relative overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
 
-            <!-- Navigation buttons -->
-            <button class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full" onclick="moveCarousel(-1)">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full" onclick="moveCarousel(1)">
-                <i class="fas fa-chevron-right"></i>
-            </button>
+                    <article class="min-w-full px-4">
+                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="AAC TechTalk" data-description="AAC Techtalk is a web interactive learning platform for children." data-image="techtalk.jpg">
+                            <img src="techtalk.jpg" alt="AAC TechTalk" class="w-full h-96 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">AAC TechTalk</h3>
+                                <p class="text-gray-300">AAC Techtalk is a web interactive learning platform for children.</p>
+                            </div>
+                        </div>
+                    </article>
 
-            <!-- Dots indicators -->
-            <div class="flex justify-center mt-6 space-x-2">
-                <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(0)"></button>
-                <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(1)"></button>
-                <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(2)"></button>
+                    <article class="min-w-full px-4">
+                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="MARIS" data-description="MARIS is an AI enhanced test creation: Improving teacher productivity and question quality." data-image="risma.jpg">
+                            <img src="risma.jpg" alt="MARIS" class="w-full h-96 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">MARIS</h3>
+                                <p class="text-gray-300">MARIS is an AI enhanced test creation: Improving teacher productivity and question quality.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="min-w-full px-4">
+                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="Smart Cryptocast" data-description="Smart Cryptocast is a platform for predicting crypto price for the next 30 days." data-image="tocrypt.jpg">
+                            <img src="tocrypt.jpg" alt="Smart Cryptocast" class="w-full h-96 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Smart Cryptocast</h3>
+                                <p class="text-gray-300">Smart Cryptocast is a platform for predicting crypto price for the next 30 days.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <button class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full" onclick="moveCarousel(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-4 rounded-full" onclick="moveCarousel(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="flex justify-center mt-6 space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(0)"></button>
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(1)"></button>
+                    <button class="w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100" onclick="goToSlide(2)"></button>
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script>
-    // Intersection Observer to trigger animations on scroll
-    const sections = document.querySelectorAll('section');
-    const observerOptions = {
-        // Use a lower threshold and small negative bottom margin so
-        // animations fire earlier on smaller screens (mobile/tablet).
-        threshold: 0.15, // trigger when ~15% visible
-        rootMargin: '0px 0px -10% 0px'
-    };
-
-    let currentIndex = 0;
-    const carousel = document.getElementById('carousel');
-    const totalSlides = carousel.children.length;
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('opacity-100', 'translate-y-0');
-            } else {
-                entry.target.classList.remove('opacity-100', 'translate-y-0');
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach((section) => {
-        observer.observe(section);
-    });
-
-    // Carousel update functions
-    function updateCarousel() {
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    function moveCarousel(direction) {
-        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-        updateCarousel();
-    }
-
-    function goToSlide(index) {
-        currentIndex = index;
-        updateCarousel();
-    }
-</script>
-
-<script>
-  // Tailwind custom config for fonts
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          grotesk: ['"Space Grotesk"', 'sans-serif'],
-        }
-      }
-    }
-  }
-</script>
-</script>
-
-<!-- Project Details Modal (moved inside body) -->
+</main>
 <div id="project-modal" class="fixed inset-0 z-60 hidden items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div id="project-modal-card" class="max-w-4xl w-full bg-gradient-to-br from-gray-900/95 to-black/80 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 scale-95 opacity-0">
         <div class="relative md:flex">
             <div class="md:w-1/2 bg-gradient-to-tr from-gray-800 to-gray-900 p-4 md:p-6 flex items-center justify-center">
                 <img id="modal-image" src="" alt="Project image" class="w-full h-72 md:h-96 object-cover rounded-xl ring-1 ring-white/5 shadow-lg">
             </div>
+
             <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between">
                         <h3 id="modal-title" class="text-2xl md:text-3xl font-bold">Project Title</h3>
                         <button id="modal-close" class="text-gray-300 hover:text-white text-3xl ml-4" aria-label="Close modal">&times;</button>
                     </div>
+
                     <p id="modal-description" class="mt-4 text-gray-300 leading-relaxed"></p>
                 </div>
+
                 <div class="mt-6">
-                    <div id="modal-tags" class="flex flex-wrap gap-2">
-                        <!-- optional tags can be inserted here -->
-                    </div>
+                    <div id="modal-tags" class="flex flex-wrap gap-2"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<section id="contact" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+     <div class="max-w-6xl mx-auto px-6 py-20 text-center">
+         <h2 class="text-4xl mb-8">GET IN TOUCH</h2>
+         <p class="text-lg text-gray-300 mb-6">Feel free to reach out for collaborations or just a friendly hello!</p>
+         <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 text-gray-400">
+             <a href="mailto:lawrence@example.com" aria-label="Email Lawrence" class="flex items-center space-x-3 hover:text-white hover:scale-105 transition-all duration-300 text-lg">
+                 <i class="fas fa-envelope text-2xl"></i>
+                 <span class="break-all">lawrencepaulbacud@gmail.com</span>
+             </a>
+
+             <a href="tel:+1234567890" aria-label="Call Lawrence" class="flex items-center space-x-3 hover:text-white hover:scale-105 transition-all duration-300 text-lg">
+                 <i class="fas fa-phone text-2xl"></i>
+                 <span>+63 905 6648 759</span>
+             </a>
+         </div>
+        </div><s></s>
+</section>
+
+<footer class="bg-black/80 text-gray-400 text-center py-6 mt-12">
+    <p>&copy; 2024 Renz. All rights reserved.</p>
+</footer>
 <script>
-    // Improved modal logic with animation and no "View Project" button
-    (function() {
+    (function () {
+        const sections = document.querySelectorAll('section');
+        const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -10% 0px' };
+
+        let currentIndex = 0;
+        const carousel = document.getElementById('carousel');
+        const totalSlides = carousel ? carousel.children.length : 0;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) entry.target.classList.add('opacity-100', 'translate-y-0');
+                else entry.target.classList.remove('opacity-100', 'translate-y-0');
+            });
+        }, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+
+        function updateCarousel() {
+            if (!carousel) return;
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        window.moveCarousel = function (direction) {
+            if (!totalSlides) return;
+            currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+            updateCarousel();
+        };
+
+        window.goToSlide = function (index) {
+            if (!totalSlides) return;
+            currentIndex = index;
+            updateCarousel();
+        };
+
         const modal = document.getElementById('project-modal');
         const modalCard = document.getElementById('project-modal-card');
         const modalTitle = document.getElementById('modal-title');
@@ -322,27 +282,28 @@
         let lastFocused = null;
 
         function showModalCard() {
-            // animate in
+            if (!modalCard) return;
             modalCard.classList.remove('scale-95', 'opacity-0');
             modalCard.classList.add('scale-100', 'opacity-100');
         }
 
         function hideModalCard() {
+            if (!modalCard) return;
             modalCard.classList.remove('scale-100', 'opacity-100');
             modalCard.classList.add('scale-95', 'opacity-0');
         }
 
         function openModal(data) {
+            if (!modal) return;
             lastFocused = document.activeElement;
             modalTitle.textContent = data.title || '';
             modalImage.src = data.image || '';
             modalImage.alt = data.title || 'Project image';
             modalDescription.textContent = data.description || '';
 
-            // tags (optional, data.tags expected as comma-separated)
             modalTags.innerHTML = '';
             if (data.tags) {
-                data.tags.split(',').map(t => t.trim()).forEach(tag => {
+                data.tags.split(',').map((t) => t.trim()).forEach((tag) => {
                     const el = document.createElement('span');
                     el.className = 'text-sm bg-white/5 text-gray-200 px-3 py-1 rounded-full';
                     el.textContent = tag;
@@ -352,15 +313,14 @@
 
             modal.classList.remove('hidden');
             modal.classList.add('flex');
-            // small timeout to allow CSS transition
             requestAnimationFrame(() => setTimeout(showModalCard, 20));
-            modalClose.focus();
+            modalClose && modalClose.focus();
             document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
+            if (!modal) return;
             hideModalCard();
-            // wait for animation then hide overlay
             setTimeout(() => {
                 modal.classList.remove('flex');
                 modal.classList.add('hidden');
@@ -369,12 +329,12 @@
             }, 220);
         }
 
-        document.querySelectorAll('.project-card').forEach(card => {
+        document.querySelectorAll('.project-card').forEach((card) => {
             const data = {
                 title: card.dataset.title,
                 description: card.dataset.description,
                 image: card.dataset.image,
-                tags: card.dataset.tags || ''
+                tags: card.dataset.tags || '',
             };
 
             card.addEventListener('click', () => openModal(data));
@@ -386,16 +346,82 @@
             });
         });
 
-        modalClose.addEventListener('click', closeModal);
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
-        });
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                closeModal();
-            }
-        });
+        modalClose && modalClose.addEventListener('click', closeModal);
+        modal && modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) closeModal(); });
+
+        window.toggleMenu = function () { const menu = document.getElementById('nav-menu'); if (menu) menu.classList.toggle('hidden'); };
     })();
+</script>
+
+<!-- Typewriter script and styles for hero roles -->
+<style>
+    .type-cursor {
+        display: inline-block;
+        width: 0.45rem;
+        height: 1.12em;
+        vertical-align: bottom;
+        margin-left: 0.28rem;
+        background: #d1d5db;
+        animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+</style>
+
+<script>
+    // Single-line typewriter that types a word, deletes it, then types the next (looping)
+    (function () {
+        const words = ['UI/UX Designer', 'Frontend Developer', 'Aspiring Full Stack Developer', 'Tech Enthusiast', 'Problem Solver', 'Lifelong Learner'];
+        const target = document.querySelector('#role-1 .type-target');
+        const cursor = document.querySelector('#role-1 .type-cursor');
+        const typeSpeed = 60; // ms per char
+        const deleteSpeed = 40; // ms per char when deleting
+        const pauseAfterType = 1000; // ms pause after finishing typing
+        const pauseAfterDelete = 300; // ms pause after deleting
+
+        function sleep(ms) { return new Promise((res) => setTimeout(res, ms)); }
+
+        async function typeWord(word) {
+            for (let i = 0; i < word.length; i++) {
+                target.textContent += word[i];
+                await sleep(typeSpeed + Math.random() * 30 - 15);
+            }
+        }
+
+        async function deleteWord() {
+            while (target.textContent.length > 0) {
+                target.textContent = target.textContent.slice(0, -1);
+                await sleep(deleteSpeed + Math.random() * 20 - 10);
+            }
+        }
+
+        async function runLoop() {
+            if (!target) return;
+            cursor && (cursor.style.visibility = 'visible');
+            // initial small delay to sync with hero animation
+            await sleep(300);
+            let i = 0;
+            while (true) {
+                const word = words[i % words.length];
+                await typeWord(word);
+                await sleep(pauseAfterType);
+                await deleteWord();
+                await sleep(pauseAfterDelete);
+                i++;
+            }
+        }
+
+        if (document.readyState === 'complete' || document.readyState === 'interactive') runLoop();
+        else document.addEventListener('DOMContentLoaded', runLoop);
+    })();
+</script>
+
+<script>
+    tailwind.config = { theme: { extend: { fontFamily: { grotesk: ['"Space Grotesk"', 'sans-serif'], }, }, }, };
 </script>
 
 </body>
