@@ -10,12 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black text-white font-sans">
-// Navbar Code
 <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/80 hidden md:block">
     <div class="font-grotesk flex justify-center items-center px-6 py-4 max-w-7xl mx-auto relative">
         <ul id="nav-menu" class="flex items-center space-x-8 text-white font-light tracking-widest">
             <li class="py-6 md:py-0 text-center hover:bg-gray-800/50 md:hover:bg-transparent w-full md:w-auto">
                 <a href="#hero" class="block px-6 md:px-4 hover:text-blue-300 transition-colors text-3xl md:text-base">HOME</a>
+            </li>
+            <li class="py-6 md:py-0 text-center hover:bg-gray-800/50 md:hover:bg-transparent w-full md:w-auto">
+                <a href="#about" class="block px-6 md:px-4 hover:text-blue-300 transition-colors text-3xl md:text-base">ABOUT</a>
             </li>
             <li class="py-6 md:py-0 text-center hover:bg-gray-800/50 md:hover:bg-transparent w-full md:w-auto">
                 <a href="#projects" class="block px-6 md:px-4 hover:text-blue-300 transition-colors text-3xl md:text-base">PROJECTS</a>
@@ -51,82 +53,89 @@
             </div>
         </div>
     </section>
+    <!--- About me --->
+    <section id="about" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 sm:mb-8">ABOUT ME</h1>
+            <p class="mx-auto max-w-3xl text-base sm:text-lg md:text-2xl text-gray-300 leading-relaxed">Hello! I'm Renz, a passionate UI/UX Designer and Frontend Developer with a keen interest in crafting beautiful and functional digital experiences. I love turning ideas into reality through design and code. When I'm not designing or coding, you can find me exploring the latest tech trends or indulging in my love for photography and travel. Let's create something amazing together!</p>
+        </div>
+    </section>
     <section id="tech-stack" class="font-grotesk opacity-0 transform translate-y-10 transition-all duration-1000 ease-in-out">
         <div class="max-w-6xl mx-auto px-6 py-20">
             <h2 class="text-4xl text-center mb-8">TECH STACK</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">HTML5</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">CSS3</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">JavaScript</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Bootstrap</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Typescript</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">React</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Tailwind CSS</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Git</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Angular</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Python</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Figma</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="Photoshop" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Photoshop</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">MySQL</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="gpt.png" alt="ChatGPT" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="gpt.png" alt="ChatGPT" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">ChatGPT</p>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-lg text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-16 h-16 mx-auto mb-4 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
+                <div class="bg-black p-4 rounded-lg shadow-lg text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 h-12 mx-auto mb-3 filter grayscale transition-all duration-300 ease-in-out hover:grayscale-0 hover:scale-110">
                     <p class="text-sm">Node.js</p>
                 </div>
             </div>
@@ -141,7 +150,7 @@
                 <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
 
                     <article class="min-w-full px-4">
-                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="AAC TechTalk" data-description="AAC Techtalk is a web interactive learning platform for children." data-image="techtalk.jpg">
+                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="AAC TechTalk" data-description="AAC Techtalk is a web interactive learning platform for children." data-image="techtalk.jpg" data-tech="angular,tailwind,nodejs">
                             <img src="techtalk.jpg" alt="AAC TechTalk" class="w-full h-96 object-cover">
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold mb-2">AAC TechTalk</h3>
@@ -151,7 +160,7 @@
                     </article>
 
                     <article class="min-w-full px-4">
-                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="MARIS" data-description="MARIS is an AI enhanced test creation: Improving teacher productivity and question quality." data-image="risma.jpg">
+                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="MARIS" data-description="MARIS is an AI enhanced test creation: Improving teacher productivity and question quality." data-image="risma.jpg" data-tech="angular,python,nodejs,mysql">
                             <img src="risma.jpg" alt="MARIS" class="w-full h-96 object-cover">
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold mb-2">MARIS</h3>
@@ -161,7 +170,7 @@
                     </article>
 
                     <article class="min-w-full px-4">
-                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="Smart Cryptocast" data-description="Smart Cryptocast is a platform for predicting crypto price for the next 30 days." data-image="tocrypt.jpg">
+                        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl project-card cursor-pointer hover:scale-[1.01] transition-transform" role="button" tabindex="0" data-title="Smart Cryptocast" data-description="Smart Cryptocast is a platform for predicting crypto price for the next 30 days." data-image="tocrypt.jpg" data-tech="nodejs,react,mysql">
                             <img src="tocrypt.jpg" alt="Smart Cryptocast" class="w-full h-96 object-cover">
                             <div class="p-6">
                                 <h3 class="text-xl font-semibold mb-2">Smart Cryptocast</h3>
@@ -209,7 +218,8 @@
                 </div>
 
                 <div class="mt-6">
-                    <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+                        <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+                        <div id="modal-tech" class="flex flex-wrap gap-2 mt-4 items-center"></div>
                 </div>
             </div>
         </div>
@@ -311,6 +321,33 @@
                 });
             }
 
+            // render tech icons into the modal
+            const modalTech = document.getElementById('modal-tech');
+            if (modalTech) {
+                modalTech.innerHTML = '';
+                const techList = (data.tech || '').split(',').map(t => t.trim()).filter(Boolean);
+                const iconMap = {
+                    react: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+                    tailwind: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+                    nodejs: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+                    python: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+                    mysql: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+                    gpt: 'gpt.png',
+                    angular: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg',
+                    // add more mappings as needed
+                };
+
+                techList.forEach(key => {
+                    const src = iconMap[key.toLowerCase()];
+                    if (!src) return;
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = key;
+                    img.className = 'w-7 h-7';
+                    modalTech.appendChild(img);
+                });
+            }
+
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             requestAnimationFrame(() => setTimeout(showModalCard, 20));
@@ -335,6 +372,7 @@
                 description: card.dataset.description,
                 image: card.dataset.image,
                 tags: card.dataset.tags || '',
+                tech: card.dataset.tech || ''
             };
 
             card.addEventListener('click', () => openModal(data));
@@ -351,6 +389,63 @@
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) closeModal(); });
 
         window.toggleMenu = function () { const menu = document.getElementById('nav-menu'); if (menu) menu.classList.toggle('hidden'); };
+    })();
+</script>
+
+<!-- Project tech logos injection -->
+<style>
+    .project-tech {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .project-tech img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        opacity: 0.9;
+        filter: grayscale(100%) brightness(0.9);
+        transition: filter 0.2s ease, transform 0.15s ease;
+    }
+
+    .project-tech img:hover { filter: none; transform: scale(1.05); }
+</style>
+
+<script>
+    (function () {
+        const iconMap = {
+            react: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+            tailwind: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+            nodejs: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+            python: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+            mysql: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+            gpt: 'gpt.png',
+            angular: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg',
+            // add more mappings as needed
+        };
+
+        document.querySelectorAll('.project-card').forEach((card) => {
+            const tech = card.dataset.tech;
+            if (!tech) return;
+            const container = document.createElement('div');
+            container.className = 'project-tech px-6 pb-4';
+            tech.split(',').map(t => t.trim()).forEach((key) => {
+                const src = iconMap[key.toLowerCase()];
+                if (!src) return;
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = key;
+                container.appendChild(img);
+            });
+
+            // append to card content area
+            const p = card.querySelector('p');
+            if (p && p.parentNode) p.parentNode.appendChild(container);
+            else card.appendChild(container);
+        });
     })();
 </script>
 
